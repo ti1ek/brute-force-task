@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		07E2F86729F082DB00C7B1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2F86629F082DB00C7B1EA /* AppDelegate.swift */; };
 		07E2F86929F082DB00C7B1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2F86829F082DB00C7B1EA /* SceneDelegate.swift */; };
-		07E2F86B29F082DB00C7B1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2F86A29F082DB00C7B1EA /* ViewController.swift */; };
-		07E2F86E29F082DB00C7B1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E2F86C29F082DB00C7B1EA /* Main.storyboard */; };
+		07E2F86B29F082DB00C7B1EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2F86A29F082DB00C7B1EA /* MainViewController.swift */; };
 		07E2F87029F082DC00C7B1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E2F86F29F082DC00C7B1EA /* Assets.xcassets */; };
 		07E2F87329F082DC00C7B1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E2F87129F082DC00C7B1EA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		07E2F86329F082DB00C7B1EA /* brute-force-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "brute-force-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E2F86629F082DB00C7B1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E2F86829F082DB00C7B1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07E2F86A29F082DB00C7B1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07E2F86D29F082DB00C7B1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07E2F86A29F082DB00C7B1EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		07E2F86F29F082DC00C7B1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E2F87229F082DC00C7B1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E2F87429F082DC00C7B1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		07E2F86529F082DB00C7B1EA /* brute-force-task */ = {
 			isa = PBXGroup;
 			children = (
-				07E2F86629F082DB00C7B1EA /* AppDelegate.swift */,
-				07E2F86829F082DB00C7B1EA /* SceneDelegate.swift */,
-				07E2F86A29F082DB00C7B1EA /* ViewController.swift */,
-				07E2F86C29F082DB00C7B1EA /* Main.storyboard */,
+				07E2F87B29F0831900C7B1EA /* Sources */,
+				07E2F87A29F082FD00C7B1EA /* Resources */,
+			);
+			path = "brute-force-task";
+			sourceTree = "<group>";
+		};
+		07E2F87A29F082FD00C7B1EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				07E2F86F29F082DC00C7B1EA /* Assets.xcassets */,
 				07E2F87129F082DC00C7B1EA /* LaunchScreen.storyboard */,
 				07E2F87429F082DC00C7B1EA /* Info.plist */,
 			);
-			path = "brute-force-task";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07E2F87B29F0831900C7B1EA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				07E2F87D29F0836F00C7B1EA /* Controllers */,
+				07E2F87C29F0832D00C7B1EA /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		07E2F87C29F0832D00C7B1EA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				07E2F86829F082DB00C7B1EA /* SceneDelegate.swift */,
+				07E2F86629F082DB00C7B1EA /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07E2F87D29F0836F00C7B1EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07E2F86A29F082DB00C7B1EA /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,6 @@
 			files = (
 				07E2F87329F082DC00C7B1EA /* LaunchScreen.storyboard in Resources */,
 				07E2F87029F082DC00C7B1EA /* Assets.xcassets in Resources */,
-				07E2F86E29F082DB00C7B1EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E2F86B29F082DB00C7B1EA /* ViewController.swift in Sources */,
+				07E2F86B29F082DB00C7B1EA /* MainViewController.swift in Sources */,
 				07E2F86729F082DB00C7B1EA /* AppDelegate.swift in Sources */,
 				07E2F86929F082DB00C7B1EA /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07E2F86C29F082DB00C7B1EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07E2F86D29F082DB00C7B1EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07E2F87129F082DC00C7B1EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,12 +309,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LPX2GGHMJT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "brute-force-task/Info.plist";
+				INFOPLIST_FILE = "brute-force-task/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +323,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.brute-force-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +341,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LPX2GGHMJT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "brute-force-task/Info.plist";
+				INFOPLIST_FILE = "brute-force-task/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +355,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.brute-force-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
